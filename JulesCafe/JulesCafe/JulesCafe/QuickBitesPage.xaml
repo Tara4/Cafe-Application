@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JulesCafe.QuickBitesPage"
+             BackgroundColor="#323130">
+    
+    <StackLayout>
+        <Frame BackgroundColor="#323130" Padding="24" CornerRadius="0">
+            <Label Text="Quick Bites" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        
+        <Grid BackgroundColor="#8c6d42">
+            <Image Source="bagel.jpg" TranslationX="-140" HeightRequest="160" WidthRequest="160" />
+            <Label Text="Bagel" HorizontalTextAlignment="Left" TextColor="White" FontSize="24" FontAttributes="Bold" TranslationX="160" TranslationY="20"/>
+            <Label Text="Freshly baked each morning" HorizontalTextAlignment="Left" TranslationX="160" TranslationY="60" TextColor="White" FontSize="18"/>
+            <Label Text="$1.50" HorizontalTextAlignment="Center" TextColor="White" FontSize="24" FontAttributes="Bold" TranslationX="145" TranslationY="125"/>
+        </Grid>
+
+        <Grid BackgroundColor="#8c6d42">
+            <Image Source="eggs.jpg" TranslationX="-140" HeightRequest="160" WidthRequest="160" />
+            <Label Text="Eggs Benedict" HorizontalTextAlignment="Left" TextColor="White" FontSize="24" FontAttributes="Bold" TranslationX="160" TranslationY="20"/>
+            <Label Text="Poached eggs over bacon and" HorizontalTextAlignment="Left" TranslationX="160" TranslationY="60" TextColor="White" FontSize="18"/>
+            <Label Text="byttered toast English muffin" HorizontalTextAlignment="Left" TranslationX="160" TranslationY="80" TextColor="White" FontSize="18"/>
+            <Label Text="topped with Hollandaise sauce" HorizontalTextAlignment="Left" TranslationX="160" TranslationY="100" TextColor="White" FontSize="18"/>
+            <Label Text="$6.50" HorizontalTextAlignment="Center" TextColor="White" FontSize="24" FontAttributes="Bold" TranslationX="145" TranslationY="125"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

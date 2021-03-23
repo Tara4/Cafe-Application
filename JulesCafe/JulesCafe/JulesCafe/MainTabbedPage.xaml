@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JulesCafe.MainTabbedPage"
+             BackgroundColor="#323130">
+    
+    <!--Pages can be added as references or inline-->
+
+    <ContentPage Title="Menu">
+        <StackLayout>
+            <Frame BackgroundColor="#323130" HorizontalOptions="CenterAndExpand">
+                <Image Source="logo.png" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Frame>
+            <Frame BackgroundColor="#8c6d42" Padding="18" CornerRadius="0">
+                <Button x:Name="espressoButton" Text="Espresso" TextColor="White" FontSize="24" BackgroundColor="Transparent" Clicked="espressoButton_Clicked"/>
+            </Frame>
+            <Frame BackgroundColor="#8c6d42" Padding="18" CornerRadius="0">
+                <Button x:Name="hotdrinksButton" Text="Hot Drinks" TextColor="White" FontSize="24" BackgroundColor="Transparent" Clicked="hotdrinksButton_Clicked"/>
+            </Frame>
+            <Frame BackgroundColor="#8c6d42" Padding="18" CornerRadius="0">
+                <Button x:Name="colddrinksButton" Text="Cold Drinks" TextColor="White" FontSize="24" BackgroundColor="Transparent" Clicked="colddrinksButton_Clicked"/>
+            </Frame>
+            <Frame BackgroundColor="#8c6d42" Padding="18" CornerRadius="0">
+                <Button x:Name="quickbitesButton" Text="Quick Bites" TextColor="White" FontSize="24" BackgroundColor="Transparent" Clicked="quickbitesButton_Clicked"/>
+            </Frame>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="About">
+        <StackLayout>
+            <Image Source="cafe.png" HorizontalOptions="FillAndExpand"/>
+            <Label Text="Jules Cafe" TextColor="White" FontAttributes="Bold" FontSize="36" Margin="20, 20, 15, 5"/>
+            <Label Text="4A Kent Street" TextColor="White" FontSize="18" Margin="20, 0, 0, 0"/>
+            <Label Text="New Market" TextColor="White" FontSize="18" Margin="20, 0, 0, 0"/>
+            <Label Text="Auckland" TextColor="White" FontSize="18" Margin="20, 0, 0, 0"/>
+            <Label Text="1023" TextColor="White" FontSize="18" Margin="20, 20, 15, 5"/>
+            <Label Text="+64 9 444 5555" TextColor="White" FontSize="18" Margin="20, 0, 0, 0"/>
+            <Image Source="facebook.png" HeightRequest="30" WidthRequest="30" TranslationX="-170"/>
+            <Image Source="instagram.png" HeightRequest="35" WidthRequest="35" TranslationX="-130" TranslationY="-38"/>
+        </StackLayout>
+    </ContentPage>
+
+
+    <ContentPage Title="Map">
+        <StackLayout>
+            <WebView x:Name="mapWebView" Source="https://mobile.here.com/p/h-aHR0cHM6Ly9wbGFjZXMuYXBpLmhlcmUuY29tL3BsYWNlcy92MS9wbGFjZXMvMDM2cjFmdHQtZDVlNTRlNzZlOThiNDc5MjllOTk2ODU1ODM0Yzk3MTg7Y29udGV4dD1abXh2ZHkxcFpEMDBOV0k0TXprek5pMWpaREZoTFRWbU5HTXRPVGszTkMwM1pUUm1NRFV6TjJRd1lXTmZNVFl3TXprME9EQTRNVGt4TjE4Mk5qWTFYekl6TXlaeVlXNXJQVEU%252FYXBwX2lkPTNLSVFsczJEU0tsTldmZGFzcEI5JmFwcF9jb2RlPWYydkRuMVRVWUVWbjRrWXR3SzM3eXc%253D?msg=Jules%20Cafe" VerticalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentPage>
+
+</TabbedPage>

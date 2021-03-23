@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JulesCafe.ExpressoPage"
+             BackgroundColor="#323130">
+
+    <StackLayout>
+        <Frame BackgroundColor="#323130" Padding="24" CornerRadius="0">
+            <Label Text="Espresso" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Grid BackgroundColor="#8c6d42" Padding="24">
+            <Label Text="Cafe Americano" HorizontalTextAlignment="Left" TextColor="White" FontSize="24"/>
+            <Label Text="$2.50" HorizontalTextAlignment="Right" TextColor="White" FontSize="24"/>
+        </Grid>
+
+        <Grid BackgroundColor="#8c6d42" Padding="24">
+            <Label Text="Cafe Latte" HorizontalTextAlignment="Left" TextColor="White" FontSize="24"/>
+            <Label Text="$3.00" HorizontalTextAlignment="Right" TextColor="White" FontSize="24"/>
+        </Grid>
+
+        <Grid BackgroundColor="#8c6d42" Padding="24">
+            <Label Text="Cappucino" HorizontalTextAlignment="Left" TextColor="White" FontSize="24"/>
+            <Label Text="$3.50" HorizontalTextAlignment="Right" TextColor="White" FontSize="24"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
